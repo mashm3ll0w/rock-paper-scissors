@@ -14,6 +14,8 @@ function computerPlay() {
 	return computerChoice;
 }
 
+let computerSelection = computerPlay();
+
 function playGame(playerSelection, computerSelection) {
 	//this function plays a single round of the game and checks on who wins
 	//return the results of this function
