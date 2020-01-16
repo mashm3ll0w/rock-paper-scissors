@@ -15,6 +15,7 @@ function computerPlay() {
 }
 
 let computerSelection = computerPlay();
+console.log(`Computer choice: ${computerSelection}`);
 
 function playGame(playerSelection, computerSelection) {
 	//this function plays a single round of the game and checks on who wins
@@ -23,6 +24,8 @@ function playGame(playerSelection, computerSelection) {
 		return "You  Win!!";
 	} else if ((computerSelection === "rock" && playerSelection === "scissors") || (computerSelection === "paper" && playerSelection === "rock") || (computerSelection === "scissors" && playerSelection === "paper")) {
 		return "The Computer Wins!!";
+	} else {
+		return "It's a Tie!!";
 	}
 }
 
