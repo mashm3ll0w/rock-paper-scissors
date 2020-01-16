@@ -29,6 +29,9 @@ function playGame(playerSelection, computerSelection) {
 	}
 }
 
+//call the function to play the game
+playGame(playerSelection, computerSelection);
+
 function game() {
 	//this plays a 5 round game, keeps the scores and reports the winner or loser at the end of the round
 }
