@@ -21,11 +21,11 @@ function playGame(playerSelection, computerSelection) {
 	//this function plays a single round of the game and checks on who wins
 	//return the results of this function
 	if ((playerSelection === "rock" && computerSelection === "scissors") || (playerSelection === "paper" && computerSelection === "rock") || (playerSelection === "scissors" && computerSelection === "paper")) {
-		return "You  Win!!";
+		console.log("You  Win!!");
 	} else if ((computerSelection === "rock" && playerSelection === "scissors") || (computerSelection === "paper" && playerSelection === "rock") || (computerSelection === "scissors" && playerSelection === "paper")) {
-		return "The Computer Wins!!";
+		console.log("The Computer Wins!!");
 	} else {
-		return "It's a Tie!!";
+		console.log("It's a Tie!!");
 	}
 }
 
