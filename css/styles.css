@@ -25,3 +25,8 @@ span {
   text-transform: uppercase;
   margin: 10px auto;
 }
+
+.divider {
+  border-left: dotted 10px #f00;
+  height: 50px;
+}
