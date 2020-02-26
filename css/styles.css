@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.rock, .paper, .scissors{
+  text-align: center;
+  border: solid 5px #000;
+  border-radius: 20px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+span {
+  display: block;
+  text-transform: uppercase;
+  margin: 10px auto;
+}
