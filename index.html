@@ -4,17 +4,39 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="stylesheet" href="css/resets.css" type="text/css">
-		<link rel="stylesheet" href="css/styles.css" type="text/css">
+		<link rel="stylesheet" href="css/resets.css" type="text/css" />
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 		<title>Rock-Paper-Scissors</title>
 	</head>
 	<body>
 		<h1>Play the classic <kbd>Rock Paper Scissors</kbd> game</h1>
+		<!-- <div class="background">
+			<div class="left-bg"></div>
+			<div class="right-bg"></div>
+		</div> -->
 		<div class="image-container">
-			<img src="imgs/hand-rock-regular.svg" alt="hand-rock-image">
-			<img src="imgs/hand-paper-regular.svg" alt="hand-paper-image">
-			<img src="imgs/hand-scissors-regular.svg" alt="hand-scissors-image">
+			<div class="gameSide">
+				<div class="rock">
+					<img src="imgs/hand-rock-regular.svg" alt="hand-rock-image" height="150px" />
+					<span>rock</span>
+				</div>
+				<div class="paper">
+					<img src="imgs/hand-paper-regular.svg" alt="hand-paper-image" height="150px" />
+					<span>paper</span>
+				</div>
+				<div class="scissors">
+					<img src="imgs/hand-scissors-regular.svg" alt="hand-scissors-image" height="150px" />
+					<span>scissors</span>
+				</div>
+			</div>
+			<div class="divider"></div>
+			<div class="resultSide">
+				<p>Your Choice:</p>
+				<p class="playerChoice"></p>
+				<p>Computer's Choice:</p>
+				<p class="compChoice"></p>
+			</div>
 		</div>
-		<script src="js/index.js" charset="utf-8" type="text/javascript"></script>
+		<!-- <script src="js/index.js" charset="utf-8" type="text/javascript"></script> -->
 	</body>
 </html>
