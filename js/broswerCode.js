@@ -5,14 +5,14 @@ function computerPlay() {
 	let compSelection = choices[Math.floor(Math.random() * 3)];
 	return compSelection;
 }
-let ComputerChoice = computerPlay();
+let computerChoice = computerPlay();
 
 let playerChoice = prompt("Rock Paper Scissors?").toLowerCase();
 
-function oneGame(ComputerChoice, playerChoice) {
-	if ((playerChoice === "rock" && ComputerChoice === "scissors") || (playerChoice === "paper" && ComputerChoice === "rock") || (playerChoice === "scissors" && ComputerChoice === "paper")) {
+function oneGame(computerChoice, playerChoice) {
+	if ((playerChoice === "rock" && computerChoice === "scissors") || (playerChoice === "paper" && computerChoice === "rock") || (playerChoice === "scissors" && computerChoice === "paper")) {
 		return "You Win!!";
-	} else if ((ComputerChoice === "rock" && playerChoice === "scissors") || (ComputerChoice === "paper" && playerChoice === "rock") || (ComputerChoice === "scissors" && playerChoice === "paper")) {
+	} else if ((computerChoice === "rock" && playerChoice === "scissors") || (computerChoice === "paper" && playerChoice === "rock") || (computerChoice === "scissors" && playerChoice === "paper")) {
 		return "AI Triumphs!!";
 	} else {
 		return "It's a Tie!!";
