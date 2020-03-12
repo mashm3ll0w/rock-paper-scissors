@@ -7,7 +7,7 @@ function computerPlay() {
 }
 let computerChoice = computerPlay();
 
-let playerChoice = prompt("Rock Paper Scissors?").toLowerCase();
+//let playerChoice = prompt("Rock Paper Scissors?").toLowerCase();
 
 function oneGame(computerChoice, playerChoice) {
 	if ((playerChoice === "rock" && computerChoice === "scissors") || (playerChoice === "paper" && computerChoice === "rock") || (playerChoice === "scissors" && computerChoice === "paper")) {
@@ -21,4 +21,11 @@ function oneGame(computerChoice, playerChoice) {
 	} else {
 		return "It's a Tie!!";
 	}
+}
+
+for (let i = 0; i < document.querySelectorAll("img").length; i++){
+	document.querySelectorAll("img")[i].addEventListener("click", function(){
+		let playerKey = this.getAttribute("class");
+		console.log(playerKey);
+	});
 }
