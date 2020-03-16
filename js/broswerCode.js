@@ -3,15 +3,14 @@
 for (let i = 0; i < document.querySelectorAll("img").length; i++) {
 	document.querySelectorAll("img")[i].addEventListener("click", function() {
 		let playerChoice = this.getAttribute("class");
-		console.log(`Player: ${playerChoice}`);
-
+		document.querySelector(".playerChoice").innerHTML = playerChoice;
 		function computerPlay() {
 			let choices = ["rock", "paper", "scissors"];
 			let compSelection = choices[Math.floor(Math.random() * 3)];
 			return compSelection;
 		}
 		let computerChoice = computerPlay();
-		console.log(`Comp: ${computerChoice}`);
+		document.querySelector(".compChoice").innerText = computerChoice;
 
 		function oneGame(computerChoice, playerChoice) {
 			if ((playerChoice === "rock" && computerChoice === "scissors") || (playerChoice === "paper" && computerChoice === "rock") || (playerChoice === "scissors" && computerChoice === "paper")) {
