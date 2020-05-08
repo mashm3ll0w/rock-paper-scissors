@@ -1,32 +1,107 @@
 body {
-  text-align: center;
+	background-color: #f4f1de;
+	color: #3d405b;
+	text-align: center;
+	padding: 50px;
+	overflow: hidden;
 }
 
-.image-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin: 3rem;
 }
 
-.rock, .paper, .scissors{
-  text-align: center;
-  border: solid 5px #000;
-  border-radius: 20px;
-  padding: 10px;
-  width: 200px;
-  height: 200px;
-  margin: 20px;
+/* Game Side - main game side */
+.gameSide {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.rock,
+.paper,
+.scissors {
+	text-align: center;
+	border: solid 3px #000;
+	border-radius: 20px;
+	padding: 10px;
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+	border: solid 3px #e07a5f;
 }
 
 span {
-  display: block;
-  text-transform: uppercase;
-  margin: 10px auto;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	text-transform: uppercase;
+	margin: 5px auto;
 }
 
-.divider {
-  border-left: dotted 10px #f00;
-  height: 50px;
+/* Results side - show the results */
+.resultSide {
+	width: 400px;
+	height: 100px;
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.player > p,
+.playerAI > p {
+	margin: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.playerChoice,
+.compChoice {
+	color: #e07a5f;
+}
+
+hr {
+	border: dotted #3d405b 10px;
+	border-bottom: none;
+	width: 3%;
+	transform: rotate(90deg);
+}
+
+/* Winner - declare the winner */
+.winner{
+	text-transform: uppercase;
+	font-weight: bold;
+  font-size: 1rem;
+}
+
+.gameResults{
+  color: #e07a5f;
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+/* Footer */
+
+footer {
+	margin-top: 5rem;
+}
+
+.logo {
+	color: #3d405b;
+	margin: 10px 5px;
+}
+
+.logo:hover,
+.logo:focus {
+	color: #e07a5f;
 }

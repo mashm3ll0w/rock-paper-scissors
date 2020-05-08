@@ -4,16 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
 		<link rel="stylesheet" href="css/resets.css" type="text/css" />
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 		<title>Rock-Paper-Scissors</title>
 	</head>
 	<body>
-		<h1>Play the classic <kbd>Rock Paper Scissors</kbd> game</h1>
-		<!-- <div class="background">
-			<div class="left-bg"></div>
-			<div class="right-bg"></div>
-		</div> -->
+		<h1>Rock Paper Scissors</h1>
 		<div class="image-container">
 			<div class="gameSide">
 				<div class="rock-container">
@@ -29,16 +26,29 @@
 					<span>scissors</span>
 				</div>
 			</div>
-			<div class="divider"></div>
+		</div>
+		<div class="results-container">
 			<div class="resultSide">
-				<p>Your Choice:</p>
-				<p class="playerChoice"></p>
-				<p>Computer's Choice:</p>
-				<p class="compChoice"></p>
-				<p>Results:</p>
-				<p class="gameResults"></p>
+				<div class="player">
+					<p>Your Choice:</p>
+					<p class="playerChoice">N/A</p>
+				</div>
+				<hr class="divider" />
+				<div class="playerAI">
+					<p>Computer's Choice:</p>
+					<p class="compChoice">N/A</p>
+				</div>
+			</div>
+			<div class="winner">
+				<p>Result</p>
+				<p class="gameResults">N/A</p>
 			</div>
 		</div>
+		<footer>
+			<a href="https://www.github.com/mashm3ll0w"><i class="logo fa fa-github fa-3x"></i></a>
+			<a href="https://www.linkedin.com/in/charles-swaleh"><i class="logo fa fa-linkedin fa-3x"></i></a>
+			<p>2020 &copy;</p>
+		</footer>
 		<script src="js/broswerCode.js" charset="utf-8" type="text/javascript"></script>
 	</body>
 </html>
